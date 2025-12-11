@@ -36,7 +36,7 @@ def scrape_loop():
 
         except Exception as e:
             print(f"Error: {e}")
-            time.sleep(10)
+            time.sleep(40)
 
 threading.Thread(target=scrape_loop, daemon=True).start()
 
